@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # //隧道相关设置（去掉下面变量前面#启用，否则使用临时隧道）
-export TOK=${TOK:-''}  # 隧道token或json
-export ARGO_DOMAIN=${ARGO_DOMAIN:-''} # 隧道域名
+export TOK=${TOK:-'{"AccountTag":"d2f6f8bf0c8ef924882b161286084887","TunnelSecret":"nJ5kSqH8bXgBQBIqLhJa4Ahzn+vi6IzLJO+zbHr3bHs=","TunnelID":"7b5d110a-7e9a-4f20-9741-5fc0671cd979"}'}  # 隧道token或json
+export ARGO_DOMAIN=${ARGO_DOMAIN:-'stream-huanthree.fastfish.pp.ua'} # 隧道域名
 
 # //哪吒相关设置
 export NEZHA_SERVER=${NEZHA_SERVER:-''}
@@ -12,7 +12,7 @@ export NEZHA_TLS=${NEZHA_TLS:-'1'}  # 1启用tls,0关闭tls
 
 # //节点相关设置(节点可在worlds文件里list.log查看)
 export TMP_ARGO=${TMP_ARGO:-'xhttp'}  # 节点类型,可选vls,vms,spl,xhttp,rel,hy2,tuic，sock,3x
-# export UUID=${UUID:-'9e0da28d-ee9c-4fef-95a4-df2d0335e649'} # 去掉#可以使用固定值，否则随机
+export UUID=${UUID:-'40f91cef-9a99-4333-bae1-66d5c9be07e1'} # 去掉#可以使用固定值，否则随机
 export VL_PORT=${VL_PORT:-'8002'} #vles 端口
 export VM_PORT=${VM_PORT:-'8001'} #vmes 端口
 export CF_IP=${CF_IP:-'ip.sb'}  # cf优选域名或ip
